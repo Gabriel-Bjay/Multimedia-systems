@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Multimedia Company</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/383b5a9765.js" crossorigin="anonymous"></script>
+</head>
+<style>
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#text">Text Projects</a></li>
+                <li><a href="#video">Video Editing</a></li>
+                <li><a href="#animation">Animations</a></li>
+                <li><a href="#audio">Audio</a></li>
+                <li><a href="#images">Images</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h1>Welcome to My Multimedia Company</h1>
+        <p>Innovative multimedia solutions for the digital world</p>
+        <div class="container">
+            <h1>Editing Showcase</h1>
+            <div class="carousel-container">
+                <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <h2><a href="#text">Text Editing</a></h2>
+                        <p>Explore the fonts and text designs created with <a href="https://fontforge.org/en-US/downloads/" class="links">FontForge</a>.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h2><a href="#animation">Animation</a></h2>
+                        <p>Check out the animation created using <a href="https://www.synfig.org/" class="links">Synfig Studios</a> to showcase the squash and stretch principle.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h2><a href="#images">Image Editing</a></h2>
+                        <p>See before-and-after image transformations using <a href="https://www.gimp.org/" class="links">GIMP</a> .</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h2><a href="#video">Video Editing</a></h2>
+                        <p>Watch videos created with <a href="https://proshow-producer.en.uptodown.com/windows/download" class="links">Proshow</a>, featuring narration and subtitles.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h2><a href="#audio">Audio Editing</a></h2>
+                        <p>Listen to enhanced audio edited with <a href="https://www.audacityteam.org/download/" class="links">Audacity</a>.</p>
+                    </div>
+                </div>
+                <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="text">
+        <h2>Text-Based Projects</h2>
+        <p>Creating fonts from scratch with <a href="https://fontforge.org/en-US/downloads/" class="links">FontForge</a> was an exciting experience. I started by sketching out my ideas on paper, ensuring each letter had a consistent style and personality. Using <a href="https://fontforge.org/en-US/downloads/" class="links">FontForge</a>, I meticulously crafted each glyph, adjusting curves and spacing to achieve a smooth and balanced look. Once satisfied, I exported the font and tested it in different applications. The process gave me a deeper appreciation for typography and the effort behind well-designed typefaces.</p>
+        <div class="media-container">
+            <div class="drive-links">
+                <a href="https://drive.google.com/file/d/1gh3Ceq1V46zDzukOxHsvzMpwyfojigKc/view?usp=sharing" target="_blank">View Fonts & Text Projects</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="video">
+        <h2>Video Editing</h2>
+        <p>Watch my edited videos and montages.</p>
+        <div class="media-container">
+            <div class="drive-links">
+                <a href="https://drive.google.com/file/d/10EnzG1LIaKPzaBD56JrrAsrsWn4aduQG/view?usp=sharing" target="_blank">Watch Videos</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="animation-section">
+        <h2>Bouncing Ball Animation</h2>
+        <p class="description">
+            I created a short animation of a bouncing ball using <a href="https://www.synfig.org/" class="links">Synfig Studios</a>. 
+            This animation applies the squash and stretch principle to give the ball a more natural and dynamic motion.
+        </p>
+        <div class="media-container">
+            <div class="drive-links">
+                <a href="https://drive.google.com/file/d/14l0mzHYeMu11snx16-r55flssIG_Tjj-/view?usp=sharing" target="_blank">Watch animation</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="audio">
+        <h2>Audio-Based Project</h2>
+        <p class="description">I used <a href="https://www.audacityteam.org/download/" class="links">Audacity</a> to edit audio by adding background music and enhancing clarity. I also integrated additional audio layers to create a more immersive experience.</p>
+        <div class="media-container">
+            <div class="drive-links">
+                <a href="https://drive.google.com/file/d/1IDPEbGuAuQM6DRwXwoTvc3in4THQrh5f/view?usp=sharing" target="_blank">View my Audio Project</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="images">
+        <h2>Image Editing</h2>
+        <p>Before & after comparisons of edited images.</p>
+        <div class="media-container">
+            <div class="drive-links">
+                <a href="editing.html" target="_blank">View Images</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <script src="script.js"></script>
+    <script>
+        let index = 0;
+        function moveSlide(direction) {
+            const carousel = document.querySelector('.carousel');
+            const items = document.querySelectorAll('.carousel-item');
+            index += direction;
+            if (index < 0) {
+                index = items.length - 1;
+            } else if (index >= items.length) {
+                index = 0;
+            }
+            carousel.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('active');
+    }
+    </script>
+</body>
+</html>

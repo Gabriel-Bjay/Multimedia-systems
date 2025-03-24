@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editing Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #121212;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            padding: 50px 20px;
+        }
+        
+        .before-after {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .before-after img {
+            width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+        }
+        .description {
+            width: 80%;
+            margin: 10px auto;
+            font-size: 16px;
+            color: #ffcc00;
+        }
+        
+        .video-section {
+            margin-top: 40px;
+        }
+        
+        video {
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+        }
+        
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        
+        a:hover {
+            color: #ff6600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Editing Showcase</h1>
+        <p>Here are some before-and-after images of my editing work using <a href="https://www.gimp.org/" class="links">GIMP</a>.</p>
+        
+        <div class="before-after">
+            <img src="images/img1.jpg" alt="Before Editing">
+            <img src="images/mmsimage3.jpg" alt="After Editing">
+            <p class="description">I used <a href="https://www.gimp.org/" class="links">GIMP</a> to adjust contrast, brightness, black point, and highlights. Additionally, I added text overlay with my admission number.</p>
+        </div>
+        
+        <div class="before-after">
+            <img src="images/img2.jpg" alt="Before Editing">
+            <img src="images/mmsimage5.jpg" alt="After Editing">
+
+        </div>
+        
+        <div class="video-section">
+            <h2>Final Edited Video</h2>
+            <p class="description">I used <a href="https://proshow-producer.en.uptodown.com/windows/download" class="links">Proshow</a> to create this video, adding narration and subtitles to enhance the viewing experience.</p>
+            <video controls>
+                <source src="images/Sunset_Presentation_Video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <a href="index.html">Back to Portfolio</a>
+    </div>
+</body>
+</html>

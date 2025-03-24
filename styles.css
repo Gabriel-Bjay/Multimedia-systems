@@ -1,0 +1,256 @@
+/* General Styling */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #222;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff00009d, #4cc8f1);
+    color: #333;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    width: 100%;
+    background: #222;
+    /* padding: 15px 0; */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.links{
+    
+    gap: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+nav ul li a:hover {
+    color: #ffcc00;
+}
+.carousel-item a{
+    color: rgb(252, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+    margin: 0 20px;
+}
+
+.carousel-item a:hover {
+    color: #ffcc00;
+}
+
+/* Section Styling */
+section {
+    padding: 80px 20px;
+    min-height: 100vh;
+}
+
+#home {
+    background: url('https://source.unsplash.com/random/1600x900/?technology') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#home h1 {
+    font-size: 3rem;
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+#home p {
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Multimedia Sections */
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.media-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    color: white;
+}
+form label, form input, form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+form button {
+    background: #ffcc00;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+form button:hover {
+    background: #ff6600;
+}
+/* Google Drive Links */
+.drive-links a {
+    display: block;
+    color: #ffcc00;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.drive-links a:hover {
+    color: #ff6600;
+}
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    background: black;
+    padding: 20px 0;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.container {
+    padding: 50px 20px;
+}
+
+.carousel-item {
+    min-width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    /* flex: 1;
+    min-width: 100%;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+     */
+}
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0%); }
+}
